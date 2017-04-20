@@ -220,5 +220,11 @@ function postFormData(url, data, callback) {
         // the Content-Type header when you pass it a FormData object
 
         request.send(formdata);
+
+        request.onprogress = function(e) {
+            if (e.lengthComputable) {
+                progress.innerHTML = Math.round(100 * e.loaded / e.total) + '% Complete';
+            }
+        }
     }
 }
