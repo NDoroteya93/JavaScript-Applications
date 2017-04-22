@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" data-page='home'>Home</a> </li>
+            <li><a href="#" data-page="downloads">Downloads</a></li>
+            <li><a href="#" data-page="tutorials">Tutorials</a> </li>
+        </ul>
+    </nav>
+
+    <section id="main"></section>
+
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/ajax/dist/ajax.min.js"></script>
+    <script>
+        let app = {
+            nav: $('nav ul li a'),
+            content: $('section#main')
+        };
+        app.putContent = function(contents) {
+            console.log(contents)
+            this.content.html(contents);
+        }
+
+        app.loadPage = function(page) {
+            $.ajax({
+                url: 'page.php',
+                type: 'get',
+                cache: true,
+                data: {
+                    page: page
+                },
+                success: function(data) {
+                    app.putContent(data);
+                },
+                error: function() {
+                    app.putContent('We could not find the page');
+                }
+
+            })
+        }
+
+        app.init = function() {
+            app.loadPage('home');
+            app.nav.on('click', function() {
+                debugger;
+                let page = $(this).data('page');
+                app.loadPage(page)
+            });
+        }();
+        // $.ajax({
+        //         url: 'file.php',
+        //         type: 'GET',
+        //         data: {
+        //             name: 'Alex'
+        //         },
+        //         success: function(data) {
+        //             console.log(data);
+        //         }
+        //     })
+        // let contents = $('#contents');
+
+        // setInterval(function() {
+        //     console.log('1 sec')
+
+        //     $.ajax({
+        //         url: 'file.txt',
+        //         cache: false,
+        //         success: function(data) {
+        //             contents.text(data);
+        //         },
+        //         error: function() {
+        //             console.log('Something went wrong')
+        //         }
+        //     });
+        // }, 1000)
+    </script>
+</body>
+
+</html>

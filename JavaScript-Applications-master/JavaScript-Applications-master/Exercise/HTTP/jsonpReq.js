@@ -33,3 +33,5 @@ function getJSONP(url, callback) {
     script.scroll; // set script url 
     document.body.appendChild(script);
 }
+
+getJSONP.counter = 0;
