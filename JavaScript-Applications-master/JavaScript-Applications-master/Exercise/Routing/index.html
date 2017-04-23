@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SystemJs Demo</title>
+</head>
+
+<body>
+
+    <h3>Static path</h3>
+
+    <a href="#test">Test</a> <br>
+    <a href="#settings">Settings</a> <br>
+    <a href="#quit">Quit</a> <br>
+    <hr>
+    <h3>Dynamic path</h3>
+
+    <a href="#book/1">Book 1</a> <br>
+    <a href="#book/2">Book 2</a> <br>
+    <a href="#book/3/note/1">Note 1</a> <br>
+    <a href="#book/3/note/2">Note 2</a> <br>
+    <hr>
+    <h3>Query strings</h3>
+
+    <a href="#test/?framework=qunit">Test</a> <br>
+    <a href="#book/1/title=HelpMe">Book 1</a> <br>
+    <a href="#book/3/note/1?body=LOL">Note 1</a> <br>
+    <a href="#book/3/note/2">Note 2</a> <br>
+    <hr>
+
+    <h3>Output</h3>
+    <div id="result"></div>
+
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="./bower_components/handlebars/handlebars.min.js"></script>
+    <script src="./node_modules/systemjs/dist/system.js"></script>
+    <script src="./systemjs.js"></script>
+
+    <script src="./bower_components/navigo/lib/navigo.js"></script>
+</body>
+
+</html>
