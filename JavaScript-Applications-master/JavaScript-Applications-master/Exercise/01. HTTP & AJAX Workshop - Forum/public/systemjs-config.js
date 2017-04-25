@@ -7,7 +7,8 @@ SystemJS.config({
         // app start script
         'main': './scripts/main.js',
         'data': './scripts/data.js',
-        'routing': './scripts/routing.js'
+        'routing': './scripts/routing.js',
+        'templateLoader': './scripts/templates/template-loader.js'
     }
 });
 System.import('main');

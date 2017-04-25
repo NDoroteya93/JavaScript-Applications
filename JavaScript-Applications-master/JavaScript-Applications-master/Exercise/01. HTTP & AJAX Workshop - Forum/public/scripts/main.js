@@ -1,6 +1,6 @@
 ﻿'use strict';
 
-import { data } from 'data';
+import { data } from './data.js';
 import { router } from 'routing';
 
 $(() => { // on document ready
@@ -125,6 +125,7 @@ $(() => { // on document ready
     });
 
     navbar.on('click', '#btn-threads', (ev) => {
+        debugger;
         data.threads.get()
             .then((data) => {
                 loadThreadsContent(data.result)
