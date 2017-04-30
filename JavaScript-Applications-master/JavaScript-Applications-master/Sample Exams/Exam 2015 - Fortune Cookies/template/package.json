@@ -17,6 +17,7 @@
     "lowdb": "^0.10.2",
     "systemjs": "^0.20.12",
     "systemjs-plugin-babel": "0.0.21",
+    "systemjs-plugin-text": "0.0.9",
     "underscore-db": "^0.9.0"
   }
 }
