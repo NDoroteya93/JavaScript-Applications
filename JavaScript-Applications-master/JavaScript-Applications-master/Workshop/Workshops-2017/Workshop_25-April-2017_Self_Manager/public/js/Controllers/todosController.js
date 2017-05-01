@@ -17,12 +17,18 @@ class ToDoController {
     }
 
     getTemplate() {
-        const getList = this.todoModel.getList();
+        let todoData;
+        const getList = this.todoModel.getList()
+            .then(x => todoData = x);
+
         let lodaTemplate = new loadTemplate('todo');
-        console.log(getList.result);
+
         lodaTemplate.getTemplate()
-            .then(template => {
-                this.container.html(template(getList));
+            .then(renderer => {
+
+                let output = renderer(todoData.result);
+
+                this.container.html(output);
                 // attach table filter plugin to inputs
                 $('[data-action="filter"]').filterTable();
 
@@ -37,14 +43,16 @@ class ToDoController {
                     }
                 });
                 $('[data-toggle="tooltip"]').tooltip();
+
+                this.updateState();
             });
+
 
     }
 
     addTodo() {
 
         let state = false;
-        debugger;
         if ($("#check-state").is(":checked")) {
             state = true;
         } else {
@@ -59,8 +67,24 @@ class ToDoController {
         this.todoModel.createToDo(todo)
             .then((todo) => {
                 toastr.success(`TODO "${todo.text}" added!`);
-                location.href = '#/todo'
+                location.href = '#/todo';
+            })
+    }
+
+    updateState() {
+        let self = this;
+        debugger;
+        $('.todo-state').on('change', function() {
+            var $checkbox = $(this).find('input');
+            var isChecked = $checkbox.prop('checked');
+            var id = $(this).attr('data-id');
+            self.todoModel.changeState(id, {
+                state: isChecked
+            }).then(function(todo) {
+                toastr.clear();
+                toastr.error(`TODO ${todo.text} updated!`);
             });
+        });
     }
 }
 

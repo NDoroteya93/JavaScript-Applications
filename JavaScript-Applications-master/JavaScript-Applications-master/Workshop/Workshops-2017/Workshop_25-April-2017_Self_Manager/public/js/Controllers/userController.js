@@ -33,6 +33,7 @@ class UserController {
         const username = $('#input-username').val();
         const password = $('#input-password').val();
         const passHash = sha1(password).toString();
+
         this.userModel.login(username, passHash)
             .then(result => {
                     let user = result.result;

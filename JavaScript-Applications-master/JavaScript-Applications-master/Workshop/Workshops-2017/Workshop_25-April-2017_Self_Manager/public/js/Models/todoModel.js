@@ -16,14 +16,12 @@ class ToDoModel {
         let headers = { 'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY) }
         return requester.get('api/todos', headers)
             .then((res) => {
-                console.log(res);
                 return res;
-            })
+            });
     }
 
     createToDo(todo) {
-        debugger;
-        const header = { 'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY) }
+        const header = { 'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY) };
         return requester.post('api/todos', todo, header)
             .then((resp) => {
                 console.log(resp);
@@ -31,8 +29,13 @@ class ToDoModel {
             });
     }
 
-    changeState() {
-
+    changeState(id, todo) {
+        const header = { 'x-auth-key': localStorage.getItem(LOCAL_STORAGE_AUTHKEY_KEY) };
+        debugger;
+        return requester.put('api/todos/' + id, todo, header)
+            .then(function(resp) {
+                return resp.result;
+            });
     }
 
 

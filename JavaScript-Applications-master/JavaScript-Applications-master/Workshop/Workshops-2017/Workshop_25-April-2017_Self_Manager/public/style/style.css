@@ -122,24 +122,54 @@ body {
 
 /*// TODOS*/
 
-#todocontainer .row {
+#todocontainer .row,
+#eventcontainer .row {
     margin-top: 40px;
     padding: 0 10px;
 }
 
-#todocontainer .clickable {
+#todocontainer .clickable,
+#eventcontainer .clickable {
     cursor: pointer;
 }
 
-#todocontainer .panel-heading div {
+#todocontainer .panel-heading div,
+#eventcontainer .panel-heading div {
     margin-top: -18px;
     font-size: 15px;
 }
 
-#todocontainer .panel-heading div span {
+#todocontainer .panel-heading div span,
+#eventcontainer .panel-heading div span {
     margin-left: 5px;
 }
 
-#todocontainer .panel-body {
+#todocontainer .panel-body,
+#eventcontainer .panel-body {
     display: none;
+}
+
+
+/*EVENts*/
+
+#auto-container {
+    display: block;
+    position: relative
+}
+
+.ui-autocomplete {
+    position: absolute;
+}
+
+.ui-autocomplete-multiselect,
+#users-events {
+    width: 100% !important;
+}
+
+.ui-autocomplete-multiselect-item {
+    padding: 10px;
+}
+
+.ui-autocomplete-multiselect-item .ui-icon.ui-icon-close {
+    float: right;
 }

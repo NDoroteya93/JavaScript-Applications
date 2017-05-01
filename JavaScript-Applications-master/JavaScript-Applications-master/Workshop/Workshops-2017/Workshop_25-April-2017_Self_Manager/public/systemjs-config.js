@@ -13,10 +13,12 @@ System.config({
         // Models
         'userModel': 'js/Models/userModel.js',
         'todosModel': 'js/Models/todoModel.js',
+        'eventsModel': 'js/Models/eventsModel.js',
 
         // Controllers
         'userController': 'js/Controllers/userController.js',
         'todosController': 'js/Controllers/todosController.js',
+        'eventsController': 'js/Controllers/eventsController.js',
 
         // Libs
         'jquery': 'libs/jquery/dist/jquery.min.js',

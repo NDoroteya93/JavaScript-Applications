@@ -7,7 +7,7 @@ const LOCAL_STORAGE_USERNAME_KEY = 'signed-in-user-username',
 
 class userModel {
     constructor() {
-        this._users = requester.get('api/users');
+        this._users = [];
     }
 
     get users() {
@@ -15,7 +15,14 @@ class userModel {
     }
 
     getList() {
-        return this.users;
+        let self = this;
+        requester.get('api/users')
+            .then((res) => {
+                res.result.forEach(user => {
+                    self.users.push(user.username);
+                })
+            })
+        return self.users;
     }
 
     register(username, passHash) {

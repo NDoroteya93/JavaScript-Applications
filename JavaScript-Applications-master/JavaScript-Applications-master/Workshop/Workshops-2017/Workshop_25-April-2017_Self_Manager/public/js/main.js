@@ -2,11 +2,13 @@
 
 import { UserController } from 'userController';
 import { ToDoController } from 'todosController';
+import { EventController } from 'eventsController';
 
 // routes
 let router = new Navigo('#/home', true);
 const users = new UserController,
-    todos = new ToDoController;
+    todos = new ToDoController,
+    events = new EventController;
 
 router
     .on({
@@ -56,6 +58,14 @@ router
         },
         '#/todo/add': function() {
             todos.addTodo()
+        },
+        //  events
+
+        '#/events': function() {
+            events.getTemplate();
+        },
+        "#/events/add": function() {
+            events.addEvents();
         }
     })
     .resolve();

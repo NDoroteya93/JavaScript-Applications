@@ -1,0 +1,63 @@
+    	<div id="eventcontainer" class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">Events List</h3>
+						<div class="pull-right">
+							<span class="clickable filter" data-toggle="tooltip" title="Add Event" data-container="body">
+								<i class="glyphicon glyphicon-plus"></i>
+							</span>
+						</div>
+					</div>
+					<div class="panel-body">
+						  <div class="form-group">
+								<label for="title-events">Title:</label>
+								<input type="text" class="form-control" id="title-events" placeholder="Enter title" name="email">
+							</div>
+							<div class="form-group">
+								<label for="description-events">Description:</label>
+								<input id ="description-events" type="text" class="form-control" placeholder="Enter description" name="">
+							</div>
+                            <div class="form-group">
+								<label for="date-events">Date:</label>
+								<input id ="date-events" type="text" class="form-control" placeholder="Enter date" name="">
+							</div>
+                            <div class="form-group">
+								<label for="category-events">Category:</label>
+								<input id="category-events" type="text" class="form-control" placeholder="Enter Category" name="">
+							</div>
+
+							<div class="ui-widget form-group">
+								<label for="users-events">Users: </label>
+								<input id="users-events" placeholder="Enter Users" class="form-control">
+								<div id="auto-container">
+								</div>
+							</div>
+							
+							<a href="#/events/add" id="btn-add-event" class="btn btn-default">Add</a>
+					</div>
+					<table class="table table-hover">
+						<thead>	
+							<tr>
+								<th>#</th>
+								<th>Title</th>
+								<th>Description</th>
+								<th>Date</th>
+                                <th>Category</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each this}}
+							<tr>
+								<td>{{@index}}</td>
+								<td>{{title}}</td>
+								<td>{{description}}</td>
+								<td>{{date}}</td>
+								<td>{{category}}</td>
+							</tr>
+							{{/each}}
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>

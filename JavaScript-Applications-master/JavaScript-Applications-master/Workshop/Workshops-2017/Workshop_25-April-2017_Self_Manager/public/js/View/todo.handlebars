@@ -33,26 +33,26 @@
 							</tr>
 						</thead>
 						<tbody>
-							 {{#each this}}
+							{{#each this}}
 							<tr>
 								<td>{{@index}}</td>
 
 								<td>{{text}}</td>
+								<td>{{category}}</td>
 								{{#if state}}
 								<td>
-									<div class="checkbox">
-										<label><input type="checkbox" checked>State</label>
+									<div class="checkbox todo-state" data-id = {{id}}>
+										<label><input  type="checkbox" checked>Done</label>
 									</div>
 								</td>
 								{{else}}
 								<td>
-									<div class="checkbox">
-										<label></label><input type="checkbox">State</label>
+									<div class="checkbox todo-state" data-id = {{id}}>
+										<label></label><input type="checkbox">Done</label>
 									</div>
 								</td>
 								{{/if}}
 
-								<td>{{category}}</td>
 							</tr>
 							{{/each}}
 						</tbody>
