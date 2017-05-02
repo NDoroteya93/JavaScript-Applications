@@ -158,6 +158,32 @@
             "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
             "140b808b-3fd5-4331-82b1-18bd23504e0e"
           ]
+        },
+        {
+          "id": 15802,
+          "title": "Event today",
+          "category": "South park",
+          "description": "some description",
+          "date": null,
+          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
+          "users": [
+            "1bc87340-cf17-4328-82f1-7fa299f024c6",
+            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
+            "fe574003-4758-4711-8b21-c7e78f0d5fa4",
+            "140b808b-3fd5-4331-82b1-18bd23504e0e"
+          ]
+        },
+        {
+          "id": 829810,
+          "title": "New Event",
+          "category": "13212",
+          "description": "desscription ",
+          "date": null,
+          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
+          "users": [
+            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
+            "140b808b-3fd5-4331-82b1-18bd23504e0e"
+          ]
         }
       ]
     },
@@ -225,7 +251,7 @@
         {
           "id": 793188,
           "text": "dori",
-          "state": false,
+          "state": true,
           "category": "1234"
         },
         {
@@ -245,96 +271,37 @@
           "text": "new todo",
           "state": false,
           "category": "todo"
+        },
+        {
+          "id": 952223,
+          "text": "New Todo ",
+          "state": true,
+          "category": "Home"
         }
       ],
       "events": [
         {
-          "id": 690559,
-          "title": "Doroteya",
-          "category": "New",
-          "description": "some description ",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 785338,
-          "title": "Doroteya",
-          "category": "some category",
-          "description": "some text",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 107530,
-          "title": "Some event",
-          "category": "New",
+          "id": 15802,
+          "title": "Event today",
+          "category": "South park",
           "description": "some description",
           "date": null,
           "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
           "users": [
             "1bc87340-cf17-4328-82f1-7fa299f024c6",
             "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
+            "fe574003-4758-4711-8b21-c7e78f0d5fa4",
             "140b808b-3fd5-4331-82b1-18bd23504e0e"
           ]
         },
         {
-          "id": 398598,
-          "title": "docfcds",
-          "category": "adasdas",
-          "description": "fadsc",
+          "id": 829810,
+          "title": "New Event",
+          "category": "13212",
+          "description": "desscription ",
           "date": null,
           "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
           "users": [
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 691783,
-          "title": "some title",
-          "category": "ddori",
-          "description": "some description",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "140b808b-3fd5-4331-82b1-18bd23504e0e",
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 691783,
-          "title": "some title",
-          "category": "ddori",
-          "description": "some description",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "140b808b-3fd5-4331-82b1-18bd23504e0e",
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 899793,
-          "title": "new event",
-          "category": "some category",
-          "description": "some description",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
             "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
             "140b808b-3fd5-4331-82b1-18bd23504e0e"
           ]
@@ -346,7 +313,23 @@
       "passHash": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220",
       "usernameLower": "svet",
       "authKey": "undefinedTNPWWh)Xfgv)!mJ#p+$%TsYJ*xJeJexjz+odEDniqbqVXwW=#fN",
-      "id": "fe574003-4758-4711-8b21-c7e78f0d5fa4"
+      "id": "fe574003-4758-4711-8b21-c7e78f0d5fa4",
+      "events": [
+        {
+          "id": 15802,
+          "title": "Event today",
+          "category": "South park",
+          "description": "some description",
+          "date": null,
+          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
+          "users": [
+            "1bc87340-cf17-4328-82f1-7fa299f024c6",
+            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
+            "fe574003-4758-4711-8b21-c7e78f0d5fa4",
+            "140b808b-3fd5-4331-82b1-18bd23504e0e"
+          ]
+        }
+      ]
     },
     {
       "username": "Doroteya",
@@ -432,6 +415,20 @@
             "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
             "140b808b-3fd5-4331-82b1-18bd23504e0e"
           ]
+        },
+        {
+          "id": 15802,
+          "title": "Event today",
+          "category": "South park",
+          "description": "some description",
+          "date": null,
+          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
+          "users": [
+            "1bc87340-cf17-4328-82f1-7fa299f024c6",
+            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
+            "fe574003-4758-4711-8b21-c7e78f0d5fa4",
+            "140b808b-3fd5-4331-82b1-18bd23504e0e"
+          ]
         }
       ]
     },
@@ -455,6 +452,13 @@
       "usernameLower": "doroteya1",
       "authKey": "undefinedzCARxh!wq$t_kdsp@nCaMEP-dBlUufGSZ(Q=OVhSJ^dIjcoqj!#",
       "id": "b119f930-2507-468d-bfc3-fd7a9502bd92"
+    },
+    {
+      "username": "dori_01",
+      "passHash": "7110eda4d09e062aa5e4a390b0a572ac0d2c0220",
+      "usernameLower": "dori_01",
+      "authKey": "undefinedFmhPt(pru=j$v#mKexrj$o#vsOSf-%#MakNANKWLS()vKiRT&j&",
+      "id": "52c9f720-dc03-46c4-9b08-93ab2c27bf49"
     }
   ]
 }
