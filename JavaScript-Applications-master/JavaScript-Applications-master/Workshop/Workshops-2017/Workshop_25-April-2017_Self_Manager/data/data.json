@@ -249,19 +249,6 @@
       ],
       "events": [
         {
-          "id": 690559,
-          "title": "Doroteya",
-          "category": "New",
-          "description": "some description ",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
           "id": 785338,
           "title": "Doroteya",
           "category": "some category",
@@ -271,19 +258,6 @@
           "users": [
             "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
             "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 107530,
-          "title": "Some event",
-          "category": "New",
-          "description": "some description",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
             "140b808b-3fd5-4331-82b1-18bd23504e0e"
           ]
         },
@@ -310,32 +284,6 @@
           "users": [
             "140b808b-3fd5-4331-82b1-18bd23504e0e",
             "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 691783,
-          "title": "some title",
-          "category": "ddori",
-          "description": "some description",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "140b808b-3fd5-4331-82b1-18bd23504e0e",
-            "d69707b4-d06d-42ac-bc10-1dde5aaafcf7",
-            "140b808b-3fd5-4331-82b1-18bd23504e0e"
-          ]
-        },
-        {
-          "id": 899793,
-          "title": "new event",
-          "category": "some category",
-          "description": "some description",
-          "date": null,
-          "creatorId": "140b808b-3fd5-4331-82b1-18bd23504e0e",
-          "users": [
-            "1bc87340-cf17-4328-82f1-7fa299f024c6",
-            "8f0c1a27-a7c0-4ef1-ac6c-912e49992c13",
             "140b808b-3fd5-4331-82b1-18bd23504e0e"
           ]
         }
