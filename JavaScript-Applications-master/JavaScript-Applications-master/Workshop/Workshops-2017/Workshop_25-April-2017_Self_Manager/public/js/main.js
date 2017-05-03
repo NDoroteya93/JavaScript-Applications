@@ -1,5 +1,14 @@
 'use strict';
 
+
+// TO START PROJECT
+// - npm install
+// - npm start
+// - username - dori
+// - pass - 1234
+// You can register 
+
+import { HomeController } from 'homeController';
 import { UserController } from 'userController';
 import { ToDoController } from 'todosController';
 import { EventController } from 'eventsController';
@@ -8,18 +17,13 @@ import { EventController } from 'eventsController';
 let router = new Navigo('#/home', true);
 const users = new UserController,
     todos = new ToDoController,
-    events = new EventController;
+    events = new EventController,
+    home = new HomeController;
 
 router
     .on({
         '*': function() {
-            $("#container").html('');
-        },
-        '#/events': function() {
-            console.log('Events')
-        },
-        '#/todo': function() {
-            console.log('todo');
+            home.getTemplate();
         },
         '#/auth': function() {
             users.getTemplate();
@@ -36,7 +40,7 @@ router
             $('#register-form-link').addClass('active');
         },
         '#/register/user': function() {
-            users.register()
+            users.register();
         },
 
         // Login

@@ -16,6 +16,7 @@ System.config({
         'eventsModel': 'js/Models/eventsModel.js',
 
         // Controllers
+        'homeController': 'js/Controllers/homeController.js',
         'userController': 'js/Controllers/userController.js',
         'todosController': 'js/Controllers/todosController.js',
         'eventsController': 'js/Controllers/eventsController.js',

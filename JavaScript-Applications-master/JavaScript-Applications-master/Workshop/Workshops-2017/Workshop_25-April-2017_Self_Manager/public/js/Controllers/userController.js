@@ -52,6 +52,7 @@ class UserController {
     }
 
     register() {
+        debugger;
         const username = $('#reg-username').val();
         const password = $('#reg-password').val();
         const passHash = sha1(password).toString();
